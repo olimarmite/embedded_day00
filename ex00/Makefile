@@ -35,7 +35,7 @@ CPPFLAGS += -D F_CPU=$(CPU_FREQUENCY)UL
 NAME_HEX=$(NAME_BIN:%.bin=%.hex)
 OBJS=$(SRCS:%.c=$(BUILD_DIR)%.o)
 
-all: hex
+all: hex flash
 
 $(BUILD_DIR)%.o: %.c
 	$(MKDIR) $(BUILD_DIR)
